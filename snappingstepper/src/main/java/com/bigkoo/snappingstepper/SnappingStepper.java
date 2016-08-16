@@ -108,14 +108,14 @@ public class SnappingStepper extends RelativeLayout implements View.OnTouchListe
         float contentTextSize = 0;
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.SnappingStepper);
-            int modeValue = a.getInt(R.styleable.SnappingStepper_mode, Mode.AUTO.getValue());
+            int modeValue = a.getInt(R.styleable.SnappingStepper_stepper_mode, Mode.AUTO.getValue());
             mode = Mode.valueOf(modeValue);
-            minValue = a.getInt(R.styleable.SnappingStepper_min, minValue);
-            maxValue = a.getInt(R.styleable.SnappingStepper_max, maxValue);
-            value = valueRangeCheck(a.getInt(R.styleable.SnappingStepper_value, value));
-            valueSlowStep = a.getInt(R.styleable.SnappingStepper_step, valueSlowStep);
+            minValue = a.getInt(R.styleable.SnappingStepper_stepper_min, minValue);
+            maxValue = a.getInt(R.styleable.SnappingStepper_stepper_max, maxValue);
+            value = valueRangeCheck(a.getInt(R.styleable.SnappingStepper_stepper_value, value));
+            valueSlowStep = a.getInt(R.styleable.SnappingStepper_stepper_step, valueSlowStep);
             if (valueSlowStep <= 0) valueSlowStep = 1;
-            text = a.getString(R.styleable.SnappingStepper_text);
+            text = a.getString(R.styleable.SnappingStepper_stepper_text);
 
             background = a.getDrawable(R.styleable.SnappingStepper_stepper_background);
             contentBackground = a.getDrawable(R.styleable.SnappingStepper_stepper_contentBackground);
