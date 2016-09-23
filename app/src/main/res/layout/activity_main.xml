@@ -35,12 +35,12 @@
 
         <com.bigkoo.snappingstepper.SnappingStepper
             android:id="@+id/stepperCustom"
-            stepper:max="200"
-            stepper:min="50"
-            stepper:step="5"
-            stepper:value="100"
-            stepper:mode="custom"
-            stepper:text="Move Me"
+            stepper:stepper_max="200"
+            stepper:stepper_min="50"
+            stepper:stepper_step="5"
+            stepper:stepper_value="100"
+            stepper:stepper_mode="custom"
+            stepper:stepper_text="Move Me"
             android:layout_width="150dp"
             android:layout_height="40dp"
           />
@@ -54,10 +54,10 @@
 
     <com.bigkoo.snappingstepper.SnappingStepper
       android:id="@+id/stepperCustom2"
-      stepper:max="200"
-      stepper:min="50"
-      stepper:step="5"
-      stepper:value="100"
+      stepper:stepper_max="200"
+      stepper:stepper_min="50"
+      stepper:stepper_step="5"
+      stepper:stepper_value="100"
       android:layout_width="150dp"
       android:layout_height="40dp"
       stepper:stepper_background="@color/colorStepperButtonNormal"

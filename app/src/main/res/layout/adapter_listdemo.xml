@@ -6,10 +6,10 @@
     xmlns:stepper="http://schemas.android.com/apk/res-auto">
     <com.bigkoo.snappingstepper.SnappingStepper
         android:id="@+id/stepperCustom"
-        stepper:max="200"
-        stepper:min="50"
-        stepper:step="5"
-        stepper:value="100"
+        stepper:stepper_max="200"
+        stepper:stepper_min="50"
+        stepper:stepper_step="5"
+        stepper:stepper_value="100"
         android:layout_width="150dp"
         android:layout_height="40dp"
         stepper:stepper_background="@color/colorStepperButtonNormal"
